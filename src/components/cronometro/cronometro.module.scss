@@ -6,9 +6,11 @@
 
   .relogioWrapper {
     align-items: center;
-    background-color: #7687A1;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
-    box-shadow: 2px 4px 4px #0000009F;
     box-sizing: border-box;
     display: flex;
     font-size: 5rem;
@@ -31,7 +33,7 @@
     font-size: 1.25rem;
     padding: 16px;
     width: 150px;
-    
+
     &:active {
       background-color: #7CA6B7;
       box-shadow: 2px 2px 4px #0000009F inset;
@@ -40,8 +42,8 @@
   }
 
   @media screen and (min-width:1280px) {
-    
-    .relogioWrapper{
+
+    .relogioWrapper {
       font-size: 15rem;
     }
 

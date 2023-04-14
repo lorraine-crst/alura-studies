@@ -4,6 +4,7 @@ import Formulario from '../components/formulario';
 import Lista from '../components/lista';
 import { iTarefa } from '../types/tarefa';
 import style from './App.module.scss';
+import Header from '../components/header';
 
 function App() {
   const [tarefas, setTarefas] = useState<iTarefa[]>([]);
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <div className={style.AppStyle}>
+      <Header/>
       <Formulario setTarefas={setTarefas} />
       <Lista
         tarefas={tarefas}
